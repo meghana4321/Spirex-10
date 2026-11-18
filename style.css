@@ -1,0 +1,171 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+button {
+    padding: 13px 18px;
+    background: #4a67d6;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #354db0;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#message {
+    color: #d93025;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.weather-card {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #e0f7fa, #e8eaf6);
+}
+
+#cityName {
+    color: #333;
+    font-size: 25px;
+}
+
+#countryName {
+    color: #777;
+    margin-top: 5px;
+}
+
+.weather-icon {
+    font-size: 65px;
+    margin: 15px 0;
+}
+
+#temperature {
+    font-size: 45px;
+    color: #333;
+}
+
+#condition {
+    color: #555;
+    margin: 8px 0;
+}
+
+#weatherTime {
+    color: #777;
+    font-size: 13px;
+    margin: 10px 0 20px;
+}
+
+.weather-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.detail {
+    background: white;
+    padding: 12px 5px;
+    border-radius: 9px;
+}
+
+.detail span {
+    font-size: 24px;
+}
+
+.detail p {
+    font-size: 12px;
+    color: #777;
+    margin: 8px 0;
+}
+
+.detail h3 {
+    font-size: 15px;
+    color: #333;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    margin-top: 25px;
+    color: #777;
+    font-size: 12px;
+}
+
+footer a {
+    color: #4a67d6;
+    text-decoration: none;
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .weather-details {
+        gap: 6px;
+    }
+}
